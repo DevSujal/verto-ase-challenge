@@ -2,21 +2,6 @@
 
 A full-featured online quiz application backend built with Node.js, Express.js, and MongoDB. This application provides comprehensive APIs for creating, managing, and taking quizzes with real-time scoring functionality.
 
-## 📋 Table of Contents
-
-- [Project Description](#project-description)
-- [Features](#features)
-- [Screenshots](#screenshots)
-- [Live Demo](#live-demo)
-- [Installation & Setup](#installation--setup)
-- [Running Tests](#running-tests)
-- [API Endpoints](#api-endpoints)
-- [Project Structure](#project-structure)
-- [Design Choices & Assumptions](#design-choices--assumptions)
-- [Technologies Used](#technologies-used)
-- [Contributing](#contributing)
-- [License](#license)
-
 ## 📖 Project Description
 
 The Online Quiz App is a robust backend system designed to handle quiz creation, question management, and quiz-taking functionality. It features a RESTful API architecture with MongoDB for data storage, making it perfect for educational platforms, training systems, or general knowledge assessments.
