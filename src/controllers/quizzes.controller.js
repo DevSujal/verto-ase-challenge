@@ -106,7 +106,7 @@ const getAllquizzes = asyncHandler(async (req, res) => {
 
   let quizzes;
   if (includeQuestions) {
-    quizzes = await Quiz.find().populate({
+    quizzes = await Quiz.find()?.populate({
       path: "questions",
       select: "-correctOption",
     });

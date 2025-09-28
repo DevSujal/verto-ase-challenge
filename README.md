@@ -22,6 +22,7 @@ A full-featured online quiz application backend built with Node.js, Express.js, 
 The Online Quiz App is a robust backend system designed to handle quiz creation, question management, and quiz-taking functionality. It features a RESTful API architecture with MongoDB for data storage, making it perfect for educational platforms, training systems, or general knowledge assessments.
 
 ### Key Capabilities:
+
 - Create and manage multiple quizzes
 - Add various types of questions to quizzes
 - Take quizzes and receive immediate scoring
@@ -41,27 +42,31 @@ The Online Quiz App is a robust backend system designed to handle quiz creation,
 
 ## 📸 Screenshots
 
-### Quiz Dashboard
-![Quiz Dashboard](https://via.placeholder.com/800x400/007ACC/FFFFFF?text=Quiz+Dashboard+Screenshot)
-*Dashboard showing available quizzes and management options*
+### Quiz Api ScreenShots
 
-### Quiz Creation Interface
-![Quiz Creation](https://via.placeholder.com/800x400/28A745/FFFFFF?text=Quiz+Creation+Interface)
-*Interface for creating new quizzes and adding questions*
+![Create Quiz](/src/images/screenshot1.png)
+_Api To Create a new Quiz_
 
-### Quiz Taking Experience
-![Quiz Taking](https://via.placeholder.com/800x400/FFC107/000000?text=Quiz+Taking+Experience)
-*User interface for taking quizzes with question navigation*
+### Add Question To Quiz
+
+![Add Questions To Quiz](/src/images/screenshot2.png)
+_Api To Add a question with options and correct option to a quiz_
+
+### Get All Questions Of A Quiz
+
+![Get All Questions of A Quiz](/src/images/screenshot3.png)
+_Api To Fetch All the Questions of The Quiz_
 
 ### Results & Scoring
-![Results Page](https://via.placeholder.com/800x400/DC3545/FFFFFF?text=Quiz+Results+%26+Scoring)
-*Results page showing quiz performance and detailed scoring*
+
+![Results Page](/src/images/screenshot4.png)
+_Api To show quiz performance and detailed scoring_
 
 ## 🌐 Live Demo
 
 **Live Application**: [https://your-quiz-app-demo.com](https://your-quiz-app-demo.com)
 
-*Note: Replace the above URL with your actual deployed application link*
+_Note: Replace the above URL with your actual deployed application link_
 
 ## 🚀 Installation & Setup
 
@@ -77,64 +82,65 @@ Before running this application, make sure you have the following installed:
 ### Step-by-Step Setup
 
 1. **Clone the repository**
+
    ```powershell
    git clone https://github.com/DevSujal/verto-ase-challenge.git
    cd verto-ase-challenge
    ```
 
 2. **Install dependencies**
+
    ```powershell
    npm install
    ```
 
 3. **Environment Configuration**
-   
+
    Create a `.env` file in the root directory and add the following variables:
+
    ```env
    PORT=8000
    MONGODB_URI=mongodb+srv://************:**************@quizcluster.98nbtbv.mongodb.net/
    NODE_ENV=development
    ```
 
-
 4. **Run the application**
+
    ```powershell
    npm start
    ```
 
 5. **Verify Installation**
-   
+
    The server should start on `http://localhost:8000`. You should see:
+
    ```
    server running on port : 8000
    ```
-
-
 
 ## 🛠 API Endpoints
 
 ### Quizzes
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
-| `POST` | `/api/v1/quizzes/` | Create a new quiz |
-| `GET` | `/api/v1/quizzes/` | Get all quizzes |
-| `GET` | `/api/v1/quizzes/:quizId` | Get a specific quiz |
-| `PUT` | `/api/v1/quizzes/:quizId` | Update a quiz |
-| `DELETE` | `/api/v1/quizzes/:quizId` | Delete a quiz |
+| Method   | Endpoint                  | Description         |
+| -------- | ------------------------- | ------------------- |
+| `POST`   | `/api/v1/quizzes/`        | Create a new quiz   |
+| `GET`    | `/api/v1/quizzes/`        | Get all quizzes     |
+| `GET`    | `/api/v1/quizzes/:quizId` | Get a specific quiz |
+| `PUT`    | `/api/v1/quizzes/:quizId` | Update a quiz       |
+| `DELETE` | `/api/v1/quizzes/:quizId` | Delete a quiz       |
 
 ### Questions
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
+| Method | Endpoint                            | Description              |
+| ------ | ----------------------------------- | ------------------------ |
 | `POST` | `/api/v1/quizzes/:quizId/questions` | Add a question to a quiz |
-| `GET` | `/api/v1/quizzes/:quizId/questions` | Get a questions |
-
+| `GET`  | `/api/v1/quizzes/:quizId/questions` | Get a questions          |
 
 ### Quiz Taking
 
-| Method | Endpoint | Description |
-|--------|----------|-------------|
+| Method | Endpoint                         | Description                         |
+| ------ | -------------------------------- | ----------------------------------- |
 | `POST` | `/api/v1/quizzes/:quizId/submit` | Submit quiz answers and get results |
 
 ## 📁 Project Structure
@@ -171,6 +177,7 @@ online-quiz-app/
 1. **MVC Pattern**: Implemented Model-View-Controller architecture for better code organization and maintainability.
 
 2. **Middleware-First Approach**: Extensive use of middleware for:
+
    - Error handling
    - Request parsing
    - CORS management
@@ -186,6 +193,7 @@ online-quiz-app/
 1. **MongoDB with Mongoose**: Chosen for flexibility in handling quiz structures and questions.
 
 2. **Schema Design**:
+
    - **Quiz Model**: Contains basic quiz information (title, creation date)
    - **Question Model**: References quiz and contains question data, options, and correct answers
 
@@ -220,21 +228,25 @@ online-quiz-app/
 ## 🛠 Technologies Used
 
 ### Backend Technologies
+
 - **Node.js** - Runtime environment
 - **Express.js** - Web application framework
 - **MongoDB** - NoSQL database
 - **Mongoose** - MongoDB object modeling
 
 ### Development Dependencies
+
 - **Nodemon** - Development server with auto-restart
 - **dotenv** - Environment variable management
 
 ### Middleware & Utilities
+
 - **CORS** - Cross-origin resource sharing
 - **Cookie-parser** - Cookie parsing middleware
 - **Custom Error Handling** - Standardized error management
 
 ### Development Tools
+
 - **Git** - Version control
 - **npm** - Package management
 - **ESM Modules** - Modern JavaScript module system
@@ -280,7 +292,6 @@ We welcome contributions to improve the Online Quiz App! Here's how you can cont
 - Add more question types (true/false, fill-in-the-blank)
 - Implement quiz analytics and reporting
 
-
 ---
 
 ## 📞 Support & Contact
@@ -296,6 +307,7 @@ If you have any questions, issues, or suggestions, please feel free to:
 ### 🌟 Show Your Support
 
 If you found this project helpful, please consider:
+
 - ⭐ Starring the repository
 - 🍴 Forking the project
 - 📢 Sharing with others

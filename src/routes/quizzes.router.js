@@ -23,7 +23,7 @@ router
 router
   .route("/:quizId/questions")
   .post(getQuizBasedOnId, addQuestion)
-  .get(getQuestions);
+  .get(getQuizBasedOnId, getQuestions);
 
 router.route("/:quizId/submit").post(getQuizBasedOnId, evaluateQuiz);
 
