@@ -50,7 +50,7 @@ _Api To show quiz performance and detailed scoring_
 
 ## 🌐 Live Demo
 
-**Live Application**: [https://your-quiz-app-demo.com](https://your-quiz-app-demo.com)
+**Live Application**: [https://verto-ase-challenge.onrender.com/api/v1/quizzes/68d91c6fedd83983a1196868/questions](https://verto-ase-challenge.onrender.com/api/v1/quizzes/68d91c6fedd83983a1196868/questions)
 
 _Note: Replace the above URL with your actual deployed application link_
 
